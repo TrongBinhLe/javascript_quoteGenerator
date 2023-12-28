@@ -1,4 +1,3 @@
-
 html {
   box-sizing: border-box;
 }
@@ -45,14 +44,50 @@ body {
   font-style: italic;
 }
 
+.button-container {
+  margin-top: 15;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background: #333;
+  outline: none;
+  box-shadow: 0 0.5rem rgba(121, 121, 121, 0.5);
+  padding: 0.5rem 1.8rem;
+}
+
+button:hover {
+  filter: brightness(150%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.3rem rgba(211, 211, 255, 0.6);
+}
+
+.twitter-button:hover {
+  color: #38a1f3;
+}
+
+.fa-twitter {
+  font-size: 1.5rem;
+}
+
 /*Media Query: Tablet or Smaller*/
 
 @media only screen and (max-width: 1000px) {
   .quote-container {
     margin: auto 10px;
   }
-  
+
   .quote-text {
-    font-size: 2.0rem;
+    font-size: 2rem;
   }
 }
